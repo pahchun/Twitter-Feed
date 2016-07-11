@@ -28,9 +28,9 @@ const Tweet = props => {
   return(
     <div className = "row box">
       <div className = "small-8 small-centered columns tweetbox">
-        <div className = "row">
+        <div className = "row allContent">
           <div className = "small-2 columns">
-            <h1>img</h1>
+            <img src= {props.profileImg}></img>
           </div>
           <div className = "small-10 columns">
 
@@ -55,7 +55,9 @@ const Tweet = props => {
                 <p className = "tweettext"> {props.text}</p>
 
               </div>
-              {imgDiv}
+              <p className = "imagePicture">
+                {imgDiv}
+              </p>
             </div>
 
             <div className = "row">
